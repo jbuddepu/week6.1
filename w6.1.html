@@ -1,0 +1,20 @@
+<html>
+<body>
+<button onclick="showDate()">Display Date</button>
+<input id="box">
+<button onclick="factorial()">Calculate Factorial</button>
+<script>
+function showDate(){
+  document.getElementById("box").value=new Date().toLocaleDateString();
+}
+function factorial(){
+  var n=prompt("Enter the number:");
+  var f=1;
+  for (var i=1;i<=n;i++){
+    f=f*i;
+  }
+  alert("Factorial is: "+f);
+}
+</script>
+</body>
+</html>
